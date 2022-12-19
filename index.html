@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Design Webpage</title>
+</head>
+<body>
+    <div class="header container">
+        <header>
+          <div class="brand"><h1>Edniel</h1></div>
+          <div class="nav-bar">
+            <nav>
+              <ul class="nav-list">
+                <li><a href=".main">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="ham">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="main">
+        <div class="firstbox">
+            <img class="hehe" src="./img/profile-pic.jpg" alt="#">
+            <div class="intro">
+                <h1 class="about-title">
+                    <span>About</span> me
+                    </h1>
+            <h1><strong>
+                Edniel Carlo D. Deolazo
+            </strong></h1>
+            <h2><span class="itext"></span></h2>
+            <p>Hi there, I'm Edniel. A Web Developer/App Developer specialized in Creating Websites Or <br> Application for your Bussiness And ideas.</p>
+            <hr>
+          
+            </div>
+        </div>
+      </div>
+
+    <section id="about">
+        <div class="about-container">
+
+            <main class="box">
+                <h1 class="section-title">My Skills And Exp</h1>
+                <div class="boxes">
+                    <article class="exp-box">
+                        <div class="XD">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <h1>Web Development PT1.</h1>
+                                        
+                                        <p>Experience In Designing And Layouting For Different Web Pages.</p>
+    
+               
+                                    </a>
+                                </li>
+                            </ul>
+        
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <h1>App Development For Desktop Application</h1>
+                                        
+                                        <p>Building And Analyzing Many Different Types of Mobile And Desktop Application And Creating Layout/Design for Deployment</p>
+                                        
+                                    </a>
+                                </li>
+                            </ul>
+        
+        
+                        </div>
+                    </article>
+    
+                    <article class="skillbox">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <h1>HTML</h1>
+                                   
+                                    <p>Visual Studio Code 2022,Live Server</p>
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <h1>Java,Javascript</h1>
+                                    <p>Visual Basic,IntelliJ,Eclipse</p>
+                                </a>
+                            </li>
+                        </ul>   
+    
+                    </article>
+                </div>
+            </main>
+
+        </div> 
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h1 class="contact-title">Contact Info</h1>
+            <div class="ct3">
+                <div class="card1">
+                    <h1>Home</h1>
+                    <div class="ew1">
+                        <img class="house" src="./img/house.png" alt="">
+                        <p><strong>Isabela San Mariano Cataguing</strong></p>
+                    </div>
+                </div>
+    
+                <div class="card2">
+                    <h1>Contact Me</h1>
+                    <div class="ew2">
+                        <img class="phone" src="./img/phone.png" alt="">
+                        <p>
+                            <strong>09273816919</strong>
+                         </p>
+                    </div>
+                </div>
+    
+                <div class="card3">
+                    <h1>Email Me</h1>
+                    <div class="ew3">
+                        <img class="gmail" src="./img/gmail.png" alt="">
+                        <p>tekobashicarlo23@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".itext",{
+            strings: ["Web Developer","App Developer","Gamer :)"],
+            typeSpeed: 200,
+            backSpeed: 200,
+            loop: true
+        })
+
+        var typed = new Typed(".home",{
+            strings: ["Webpage Portfolio"],
+            typeSpeed: 160,
+            backSpeed: 160,
+            loop: true
+        })
+    </script>
+
+    <script>
+        const ham = document.querySelector('.header .nav-bar .ham');
+const nav = document.querySelector('.header .nav-bar nav');
+ham.addEventListener('click', () => {
+	nav.classList.toggle('nav-toggle');
+	ham.classList.toggle('close');
+});
+console.log(ham);
+    </script>
+
+</body>
+</html>
