@@ -345,6 +345,9 @@ a{
     .exp-box{
         width:auto;
     }
+    .firstbox{
+    width:auto;
+    }
     .contact-title{
         font-size:2rem;
         margin-top:50px;
